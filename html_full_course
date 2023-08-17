@@ -1,0 +1,7 @@
+alert() = displays the input in the top screen of the page
+prompt() = gets input from user in the top screen of the page
+Math.floor(num) = Round down
+Math.ceil(num) =Round up
+Math.random() = 0 inclusive 1 exclusive
+
+To insert a argument in the string within a function => `${  }`
