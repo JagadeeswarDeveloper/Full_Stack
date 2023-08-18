@@ -53,6 +53,35 @@ const det ={
 }
 console.log(person('jagadeesh' , 20))
 -----------------------------------------------------------------------------------------------
+Foor loop : 
+const double = (number)=>{
+    let value = []
+    for(const i of number){
+        value.push(i*2)
+    }
+    return value
+}
+
+let number = [1,2,3,4,5]
+console.log(double(number))
+----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
