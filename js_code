@@ -1,1 +1,4 @@
-
+Slicing in Js:
+const food = ['apple','banana','orange','you']
+food.push('cookie')
+console.log(food.slice(0,3))
