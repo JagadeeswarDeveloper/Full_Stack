@@ -2,3 +2,43 @@ Slicing in Js:
 const food = ['apple','banana','orange','you']
 food.push('cookie')
 console.log(food.slice(0,3))
+------------------------------------------------------------------------------------
+Alert function():
+Inp = prompt('What\'s youre name')
+alert(Inp)
+------------------------------------------------------------------------------------
+Round up and round down numbers:
+Num = Number(prompt('Enter a number'))
+round = Math.floor(Num)
+Roundup = Math.ceil(Num)
+console.log('Round down num : ', round , 'Roundup number: ', Roundup)
+------------------------------------------------------------------------------------
+Functions:
+function food(price , tip){
+    tipamt = tip/100
+    totalamt = tip*price 
+    detail = `The tip is ${tip} and price of food is ${food}`
+    return totalamt
+}
+
+price = Number(prompt('Enter price of food'))
+tip = Number(prompt('Enter tip amount'))
+console.log(food(price, tip))
+-------------------------------------------------------------------------------------
+Initializing in a different way:
+const sum =(a,b)=>{
+    return a+b
+}
+
+console.log(sum(2,3))
+---------------------------------------------------------------------------------------
+Objects:
+const person = (name , age) =>{
+    const details = {
+        name : name,
+        age : age
+    }
+    const msg = `Hi, welcome ${details.name} , you're age is ${details.age}`
+    return msg
+}
+console.log(person('jagadeesh' , 20))
