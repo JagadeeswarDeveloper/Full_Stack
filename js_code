@@ -33,12 +33,28 @@ const sum =(a,b)=>{
 console.log(sum(2,3))
 ---------------------------------------------------------------------------------------
 Objects:
-const person = (name , age) =>{
+const person = (name , age , salary , expense) =>{
     const details = {
         name : name,
-        age : age
+        age : age,
+        salary : salary,
+        expense : expense,
+        savings : function () {
+           return this.salary - this.expense
+        } 
     }
-    const msg = `Hi, welcome ${details.name} , you're age is ${details.age}`
+const det ={
+    name : prompt('Name?')
+    age : prompt('')
+}
+
+    const msg = `Hi, welcome ${details.name} , you're age is ${details.age} , and youre monthly savings is ${details.savings()} `
     return msg
 }
 console.log(person('jagadeesh' , 20))
+-----------------------------------------------------------------------------------------------
+
+
+
+
+
