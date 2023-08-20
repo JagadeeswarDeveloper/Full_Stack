@@ -67,9 +67,21 @@ console.log(double(number))
 ----------------------------------------------------------------------------------------------
 
 
+function max:
 
+const nr = [1,2,3,4,5]
+const max=(number)=>{
+    let result = number[0]
+    for (num of number){
+        if (num > result){
+            result = num
+        }
+    }
+    return {result }
+}
 
-
+console.log(max(nr))
+--------------------------------------------------------------------------------------------------------
 
 
 
