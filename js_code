@@ -102,7 +102,23 @@ Finding frequence of a string :
 phra = 'haha'
  console.log(countphrase(phra))
 ---------------------------------------------------------------------------------------------------------------------------
+word frequency : 
+const wordphrase = (phrase) =>{
+    let wordobj = {}
+    let space = phrase.split(' ')
+    for (const i of space){
+        if(i in wordobj){
+            wordobj[i]++
+        }
+        else{
+            wordobj[i] = 1
+        }
+    }
+    return wordobj
+}
 
+console.log(wordphrase('lol what lol'))
+-------------------------------------------------------------------------------------------------------------------------------
 
 
 
