@@ -82,7 +82,26 @@ const max=(number)=>{
 
 console.log(max(nr))
 --------------------------------------------------------------------------------------------------------
+Finding frequence of a string :
+ const countphrase =(phrase)=>{
+    let freq = {}
+    for( const i of phrase){
+       if (i in freq){
+        freq[i] = freq[i]+1
 
+       }
+       else{
+        freq[i] = 1
+
+       }
+    }
+    return freq
+
+ }
+
+phra = 'haha'
+ console.log(countphrase(phra))
+---------------------------------------------------------------------------------------------------------------------------
 
 
 
