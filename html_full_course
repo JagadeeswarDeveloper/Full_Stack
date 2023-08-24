@@ -6,4 +6,6 @@ Math.random() = 0 inclusive 1 exclusive
 
 To insert a argument in the string within a function => `${  }`
 map function = .map()
-filter function = 
+filter function 
+Reduce function - usually for summing up
+
