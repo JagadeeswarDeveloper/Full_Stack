@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Counting app</h1>
+  <div id="all">
+    <button class="squares" id="rock" value="red">Red</button>
+    <button class="squares" id="paper" value="yellow">Yellow</button>
+    <button class="squares" id="scis" value="green">Green</button>
+   
+  </div>
+   <button id="clear" value="reset">Reset</button>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+-----
+let rockdiv = document.getElementById('rock');
+let paperdiv = document.getElementById('paper');
+let scisdiv = document.getElementById('scis');
+
+// rockdiv.onclick = () => console.log('rock');
+// paperdiv.onclick = () => console.log('paper');
+// scisdiv.onclick = () => console.log('scis');
+
+const squares = document.querySelectorAll('.squares');
+
+const timesclicked = {
+  'red': 0,
+  'yellow': 0,
+  'green': 0
+}
+
+squares.forEach(square => {
+  square.onclick = () => {
+    timesclicked[square.value] += 1;
+    square.innerText = timesclicked[square.value];
+  };
+});
+
+let cleardiv = document.getElementById('clear');
+
+cleardiv.onclick = () => {
+  for (const key in timesclicked) {
+    timesclicked[key] = 0;
+  }
+  squares.forEach(square => {
+    square.innerText = '';
+  });
+};
+
+----------
+#all{
+  display: flex;
+}
+
+#rock {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+
+#paper {
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+}
+#scis {
+  background-color: green;
+  height: 100px;
+  width: 100px;
+}
+
+#clear {
+  background-color: orange;
+  width: 100px;
+  height : 20px;
+  margin-top: 30px;
+}
+
